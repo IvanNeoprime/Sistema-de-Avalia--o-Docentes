@@ -187,3 +187,35 @@
 html {
   font-size: var(--font-size);
 }
+
+/* Responsividade para telas menores */
+@media (max-width: 600px) {
+  html {
+    font-size: 14px;
+  }
+  body {
+    padding: 8px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  h4, p, label, button, input {
+    font-size: 1rem;
+  }
+  img, video {
+    max-width: 100%;
+    height: auto;
+  }
+  .container, .card, .sidebar {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 8px;
+  }
+}
