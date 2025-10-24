@@ -55,8 +55,9 @@
           "@vitejs/plugin-react-swc": "^3.10.2",
           "vite": "6.3.5"
       },
-      "scripts": {
+       "scripts": {
           "dev": "vite",
-          "build": "vite build"
+          "prebuild": "chmod +x ./node_modules/.bin/vite",
+          "build": "npx --yes vite build"
       }
   }
